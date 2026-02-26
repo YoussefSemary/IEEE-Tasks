@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // Code One
+      /*Code 1 Won't work because they are in the Head tag, and the body tag hasn't reached yet so h1 doesn't exist yet */
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+     // Code Two
+     /*Code 2 Will work because it used window.onload function, so it loads the whole page first*/
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three
+      /*Code 3 because the command came after the h1 and it came in the body tag*/
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>

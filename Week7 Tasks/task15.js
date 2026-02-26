@@ -1,0 +1,12 @@
+console.log(100_000);
+console.log(100000);
+console.log(10e4);
+console.log(5e4 + 5e4);
+console.log(10 ** 5);
+console.log(1000000 / 10);
+console.log(Math.max(10, 9585, 5250, 100000));
+console.log(Math.min(545468, 999999, 23154875, 100000));
+console.log(Math.floor(100000.9));
+console.log(Math.ceil(99999.1));
+console.log(Math.round(99999.9));
+console.log(Math.trunc(100000.9));
